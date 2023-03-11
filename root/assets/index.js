@@ -23,7 +23,7 @@ function initPage() {
 
                 const currentDate = new Date(response.data.dt * 1000);
                 const day = currentDate.getDate();
-                const month = currentDate.getMonth();
+                const month = currentDate.getMonth() + 1;
                 const year = currentDate.getFullYear();
                 nameEl.innerHTML = response.data.name + " (" + month + "/" + day + "/" + year + ") ";
                 currentTempEl.innerHTML = "Temperature: " + k2f(response.data.main.temp) + " &#176F";
