@@ -3,11 +3,9 @@ function initPage() {
     const searchEl = document.getElementById("search-button");
     const clearEl = document.getElementById("clear-history");
     const nameEl = document.getElementById("city-name");
-    const currentPicEl = document.getElementById("current-pic");
     const currentTempEl = document.getElementById("temperature");
     const currentHumidityEl = document.getElementById("humidity");
     const currentWindEl = document.getElementById("wind-speed");
-    const currentUVEl = document.getElementById("UV-index");
     const historyEl = document.getElementById("history");
     var fivedayEl = document.getElementById("fiveday-header");
     var todayweatherEl = document.getElementById("today-weather");
@@ -26,7 +24,7 @@ function initPage() {
                 const currentDate = new Date(response.data.dt * 1000);
                 const day = currentDate.getDate();
                 const month = currentDate.getMonth();
-                const year = currentDate.getYear();
+                const year = currentDate.getFullYear();
                 nameEl.innerHTML = response.data.name + " (" + month + "/" + day + "/" + year + ") ";
                 currentTempEl.innerHTML = "Temperature: " + k2f(response.data.main.temp) + " &#176F";
                 currentHumidityEl.innerHTML = "Humidity: " + response.data.main.humidity + "%";
