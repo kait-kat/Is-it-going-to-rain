@@ -1,45 +1,32 @@
-# Weather-App
-A weather app that checks multiple cities for outlook
+# Is it going to rain?
+
+## Description
+
+A quick and easy weather application that pulls up a 5 day forecase based on the city you choose.
 
 ## User Story
 
 ```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
+AS A person who is deterred by weather conditions
+I WANT to be able to quickly full up the forecast for a city I'm traveling to
+SO THAT I can choose if its worth it
 ```
 
 ## Acceptance Criteria
 
 ```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+GIVEN a weather application
+WHEN I need to look up a specific city
+THEN I receive current weather conditions and the forecast for the week
+WHEN I want to review my history of searches
+THEN I am able to pull the data locally
+
 ```
 
-## Acceptance Criteria Simplified
+## Usage
 
-In this project you'll create a webpage that allows people to perform searches for the weather report in various cities.
+When you launch the browser, it displays a very simple front end design. You can then input a city into the search bar and once you click the button you receive forecast data for the current city of choice. You can also opt to save the results which will be stored to local storage and can be retrieved. 
 
-You will need to complete the following subtasks:
+![weather app ss](https://user-images.githubusercontent.com/112601209/224466542-3f50d2b1-42a6-4a89-945a-6c40a8e1699d.jpg)
 
-* Create a page with the following:
-    * A text input for entering a city
-    * A button to perform the search
-    * A section for showing previous searches
-    * A section for showing the fetched weather data
-    * The input and button should be inside a form so that pressing "enter" on the input field will cause the search to trigger
-* When the user enters a city and performs the search (the form is submitted):
-    * Fetch the weather data from the openWeatherMap API (the 5 day forcast)
-        * A 5 day forecast can contain today as one of the days. This should be perfectly fine as long as you're showing 5 days of data
-    * Put the city into the saved searches list (persist this to localstorage)
-    * Show the fetched weather data in the appropriate section. Make it look pretty!
-* The saved searches should load from localstorage when the page is loaded
-* When clicking on a saved search, that search data should be fetched and displayed
-* The page should look pretty! You can use the mockup as an example or make your own version. It must "resemble" the mockup, but you can use your own creative liberties.
+[(https://kait-kat.github.io/Is-it-going-to-rain/root/index.html)]
